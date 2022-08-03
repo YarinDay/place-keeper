@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <title>User Form</title>
+</head>
+
+<body>
+
+    <div class="form-container" style="background-color: blue;">
+        <form id="frmRegister" onsubmit="submitBtn(event)">
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" class="email" placeholder="example@gmail.com" name="email" required />
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="range" id="age" name="age" min="18" max="120" value="22" oninput="userAge(this.value)" />
+                <span id="sAge">22</span>
+            </div>
+            <h3>Colors-</h3>
+
+
+
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" class="birth-date" name="dob" />
+            </div>
+            <div>
+                <label for="dob">Birth Time:</label>
+                <input type="datetime" id="dob" class="birth-date" name="dob" />
+            </div>
+
+
+            <!-- <input type="submit" value="Register" /> -->
+            <!-- <button type="button">Register</button> -->
+            <!-- <input type="submit" formnovalidate value="Save" /> -->
+            <div>
+
+                Change Background Color: <input type="color" id="backgroundcolor" class="bgc" value="#ff0000" />
+            </div>
+            <div>
+
+                Change Text Color: <input type="color" id="color" class="text-color" value="#ff0000" />
+            </div>
+            <!-- <input type="submit"></input>  -->
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script src="js/utilService.js"></script>
+    <script src="js/placeService.js"></script>
+    <script src="js/storageService.js"></script>
+    <script src="js/userService.js"></script>
+</body>
+
+</html>
